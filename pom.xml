@@ -108,7 +108,52 @@
     </dependency>
   </dependencies>
 
-    <build>
+  <profiles>
+   <profile>
+      <id>release</id>
+	  <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <build>
+         <plugins>
+            <plugin>
+               <groupId>org.sonatype.plugins</groupId>
+               <artifactId>nexus-staging-maven-plugin</artifactId>
+               <version>1.6.6</version>
+               <executions>
+                  <execution>
+                     <id>default-deploy</id>
+                     <phase>deploy</phase>
+                     <goals>
+                        <goal>deploy</goal>
+                     </goals>
+                  </execution>
+               </executions>
+               <configuration>
+                  <serverId>nexus-example</serverId>
+                  <nexusUrl>http://localhost:8081/nexus/</nexusUrl>
+                  <skipStaging>true</skipStaging>
+               </configuration>
+            </plugin>
+         </plugins>
+      </build>
+   </profile>
+  </profiles>
+
+
+
+  <distributionManagement>
+	<repository>
+      <id>releases</id>
+      <url>https://localhost:8081/nexus/content/repositories/releases</url>
+    </repository>
+    <snapshotRepository>
+       <id>snapshots</id>
+       <url>https://localhost:8081/nexus/content/repositories/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+  <build>
     <finalName>shared</finalName>
     <plugins>
       <plugin>
@@ -124,9 +169,12 @@
 		<configuration>
 		  <tagNameFormat>v@{project.version}</tagNameFormat>
 		  <autoVersionSubmodules>true</autoVersionSubmodules>
-		  <releaseProfiles>releases</releaseProfiles>
+		  <useReleaseProfile>false</useReleaseProfile>
+		  <releaseProfiles>release</releaseProfiles>
+		  <goals>deploy</goals>
 	    </configuration>
       </plugin>
+
         <!--
       <plugin>
           this plugin will use the fabric.* properties to configure its behaviour
@@ -138,11 +186,4 @@
         -->
     </plugins>
   </build>
-
-  <distributionManagement>
-	<repository>
-	  <id>ci-example-release</id>
-	  <url>http://localhost:8081/nexus/content/repositories/snapshots</url>
-	</repository>
-</distributionManagement>
 </project>
