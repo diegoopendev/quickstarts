@@ -131,7 +131,7 @@
                </executions>
                <configuration>
                   <serverId>nexus-example</serverId>
-                  <nexusUrl>https://localhost:8081/nexus/</nexusUrl>
+                  <nexusUrl>http://localhost:8081/nexus/</nexusUrl>
                   <skipStaging>true</skipStaging>
                </configuration>
             </plugin>
@@ -145,11 +145,11 @@
   <distributionManagement>
 	<repository>
       <id>releases</id>
-      <url>https://localhost:8081/nexus/content/repositories/releases</url>
+      <url>http://localhost:8081/nexus/content/repositories/releases</url>
     </repository>
     <snapshotRepository>
        <id>snapshots</id>
-       <url>https://localhost:8081/nexus/content/repositories/snapshots</url>
+       <url>http://localhost:8081/nexus/content/repositories/snapshots</url>
     </snapshotRepository>
   </distributionManagement>
 
