@@ -175,15 +175,19 @@
 	    </configuration -->
       </plugin>
 
-        <!--
+        
       <plugin>
-          this plugin will use the fabric.* properties to configure its behaviour
-          see the Properties section here: http://fabric8.io/gitbook/mavenPlugin.html
+        <!--  this plugin will use the fabric.* properties to configure its behaviour
+          see the Properties section here: http://fabric8.io/gitbook/mavenPlugin.html -->
         <groupId>io.fabric8</groupId>
         <artifactId>fabric8-maven-plugin</artifactId>
-        <version>1.2.0.redhat-133</version>
+		<version>1.2.0.redhat-133</version>
+		<configuration>
+			<jolokiaUrl>http://192.168.226.132:8182/jolokia</jolokiaUrl>
+	        <profile>profile-dummy</profile>
+		</configuration>
       </plugin>
-        -->
+        
     </plugins>
   </build>
 </project>
