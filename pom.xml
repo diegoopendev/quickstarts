@@ -183,7 +183,7 @@
         <artifactId>fabric8-maven-plugin</artifactId>
 		<version>1.2.0.redhat-133</version>
 		<configuration>
-			<jolokiaUrl>http://192.168.226.132:8182/jolokia</jolokiaUrl>
+			<jolokiaUrl>http://192.168.226.133:8182/jolokia</jolokiaUrl>
 	        <profile>profile-dummy</profile>
 		</configuration>
       </plugin>
