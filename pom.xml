@@ -80,8 +80,8 @@
 		fabric8 deploy profile configuration 
 		<fabric8.profile>example-ci</fabric8.profile>
 		<fabric8.parentProfiles>feature-example-ci</fabric8.parentProfiles>
-		<fabric8.features></fabric8.features>-->
-		<fabric8.includeArtifact>false</fabric8.includeArtifact>
+		<fabric8.features></fabric8.features>
+		<fabric8.includeArtifact>false</fabric8.includeArtifact>-->
 		<fabric8.upload>false</fabric8.upload>
 
 	    <!-- the version of the JBoss Fuse BOM, defining all the dependency versions -->
@@ -185,7 +185,7 @@
 		<version>1.2.0.redhat-133</version>
 		<configuration>
 			<jolokiaUrl>http://192.168.226.133:8182/jolokia</jolokiaUrl>
-	        <profile>profile-dummy</profile>
+	        <profile>myprofile</profile>
 		</configuration>
       </plugin>
         
