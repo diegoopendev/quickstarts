@@ -47,11 +47,12 @@
         </repository>
     </repositories>
 
-	 <scm>
-		<connection>scm:git:git@github.com:diegoopendev/quickstarts.git</connection>
-		<url>scm:git:git@github.com:diegoopendev/quickstarts.git</url>
-		<developerConnection>scm:git:git@github.com:diegoopendev/quickstarts.git</developerConnection>
-  </scm>
+    <scm>
+	<connection>scm:git:git@github.com:diegoopendev/quickstarts.git</connection>
+	<url>scm:git:git@github.com:diegoopendev/quickstarts.git</url>
+	<developerConnection>scm:git:git@github.com:diegoopendev/quickstarts.git</developerConnection>
+	<tag>HEAD</tag>
+    </scm>
 
     <pluginRepositories>
         <pluginRepository>
