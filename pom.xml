@@ -77,11 +77,11 @@
 
 	<!-- the version of the BOM, defining all the dependency versions
 	<fabric.version>1.2.0-SNAPSHOT</fabric.version>
+	<fabric8.bundles>mvn:${project.artifactId}/${project.groupId}/${MVN_RELEASE_VERSION}</fabric8.bundles>
+	<fabric8.includeArtifact>false</fabric8.includeArtifact>
 
 	fabric8 deploy profile configuration -->
-	<fabric8.includeArtifact>false</fabric8.includeArtifact>
 	<fabric8.upload>false</fabric8.upload>
-	<fabric8.bundles>mvn:${project.artifactId}/${project.groupId}/${MVN_RELEASE_VERSION}</fabric8.bundles>
 
 	<!-- the version of the JBoss Fuse BOM, defining all the dependency versions -->
 	<jboss.fuse.bom.version>6.2.0.redhat-133</jboss.fuse.bom.version>
