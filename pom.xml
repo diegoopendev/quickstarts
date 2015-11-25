@@ -21,8 +21,8 @@
     <artifactId>quickstarts</artifactId>
     <version>2.5-SNAPSHOT</version>
     <packaging>bundle</packaging>
-    <name>JBoss Fuse Quickstart: camel-log</name>
-    <description>Camel Log Example</description>
+    <name>JBoss Fuse Quickstart: camel-log RAMA</name>
+    <description>Camel Log Example RAMA</description>
 
     <licenses>
         <license>
