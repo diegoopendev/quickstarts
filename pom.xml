@@ -19,7 +19,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.jboss.quickstarts.fuse</groupId>
     <artifactId>quickstarts</artifactId>
-    <version>2.9</version>
+    <version>3.0-SNAPSHOT</version>
     <packaging>bundle</packaging>
     <name>JBoss Fuse Quickstart: camel-log RAMA</name>
     <description>Camel Log Example RAMA</description>
@@ -51,7 +51,7 @@
 	<connection>scm:git:git@github.com:diegoopendev/quickstarts.git</connection>
 	<url>scm:git:git@github.com:diegoopendev/quickstarts.git</url>
 	<developerConnection>scm:git:git@github.com:diegoopendev/quickstarts.git</developerConnection>
-    <tag>quickstarts-2.9</tag>
+    <tag>HEAD</tag>
   </scm>
 
     <pluginRepositories>
