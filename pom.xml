@@ -51,7 +51,6 @@
 	<connection>scm:git:git@github.com:diegoopendev/quickstarts.git</connection>
 	<url>scm:git:git@github.com:diegoopendev/quickstarts.git</url>
 	<developerConnection>scm:git:git@github.com:diegoopendev/quickstarts.git</developerConnection>
-      <tag>quickstarts-2.5</tag>
   </scm>
 
     <pluginRepositories>
